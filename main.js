@@ -13,9 +13,9 @@
 
 
 
-arr = [3, 5, 10, 2, 8];
+let arr = [3, 5, 10, 2, 8];
 
-arr1 = [50, 68, 1000, 698, 114, 1, -6, 31, 15, 0.21, -65, 510];
+let arr1 = [50, 68, 1000, 698, 114, 1, -6, 31, 15, 0.21, -65, 510];
 
 
 
@@ -24,13 +24,13 @@ arr1 = [50, 68, 1000, 698, 114, 1, -6, 31, 15, 0.21, -65, 510];
 
 function elaboratore(lista_numeri) {
     
-    lista_somma = lista_numeri.reduce((acc, n)=> acc + n )
+    let lista_somma = lista_numeri.reduce((acc, n)=> acc + n )
         
-    arr_media = lista_somma / lista_numeri.length;
+    let arr_media = lista_somma / lista_numeri.length;
         
-    num_minori_media = lista_numeri.filter(  (num)=> num < arr_media   );
+    let num_minori_media = lista_numeri.filter(  (num)=> num < arr_media   );
     
-    num_maggiori_media = lista_numeri.filter(  (num)=>  num > arr_media );
+    let num_maggiori_media = lista_numeri.filter(  (num)=>  num > arr_media );
 
     return `media = ${arr_media}\ni valori minori della media sono ${num_minori_media.length} [${num_minori_media}]\ni valori maggiori della media sono ${num_maggiori_media.length} [${num_maggiori_media}]`
     
@@ -47,13 +47,13 @@ console.log(  elaboratore(  arr )   );
 
 function elaboratoreCifre(...lista_numeri) {
     
-    lista_somma = lista_numeri.reduce((acc, n)=> acc + n )
+    let lista_somma = lista_numeri.reduce((acc, n)=> acc + n )
         
-    arr_media = lista_somma / lista_numeri.length;
+    let arr_media = lista_somma / lista_numeri.length;
         
-    num_minori_media = lista_numeri.filter(  (num)=> num < arr_media   );
+    let num_minori_media = lista_numeri.filter(  (num)=> num < arr_media   );
     
-    num_maggiori_media = lista_numeri.filter(  (num)=>  num > arr_media );
+    let num_maggiori_media = lista_numeri.filter(  (num)=>  num > arr_media );
 
     return `media = ${arr_media}\ni valori minori della media sono ${num_minori_media.length} [${num_minori_media}]\ni valori maggiori della media sono ${num_maggiori_media.length} [${num_maggiori_media}]`
     
